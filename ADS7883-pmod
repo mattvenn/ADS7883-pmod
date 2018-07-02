@@ -1,0 +1,59 @@
+Source:,/home/mattvenn/work/kicad/bbb-adc/bbb-adc.sch
+Date:,Thu 06 Oct 2016 11:44:45 CEST
+Tool:,Eeschema (2015-06-25 BZR 5821)-product
+Generator:,/usr/local/share/doc/kicad/scripts/bom-in-python/bom_csv_grouped_by_value.py
+Component Count:,28
+
+Individual Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet
+,,!cs1,TEST,conn:TEST,Measurement_Points:Test_Point,
+,,C1,1u,device:C,Capacitors_SMD:C_1206_HandSoldering,
+,,C2,1u,device:C,Capacitors_SMD:C_1206_HandSoldering,
+,,C3,10n,device:C,Capacitors_SMD:C_1206_HandSoldering,
+,,C4,10n,device:C,Capacitors_SMD:C_1206_HandSoldering,
+,,C5,1u,device:C,Capacitors_SMD:C_1206_HandSoldering,
+,,C6,1nf,device:C,Capacitors_SMD:C_1206_HandSoldering,
+,,D1,LED,device:LED,LEDs:LED-1206,
+,,P1,CONN_01X03,conn:CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,
+,,P2,CONN_01X02,conn:CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+,,P9,CONN_02X04,conn:CONN_02X04,Pin_Headers:Pin_Header_Straight_2x04,
+,,R1,100R,device:R,Resistors_SMD:R_1206_HandSoldering,
+,,R2,R,device:R,Resistors_SMD:R_1206_HandSoldering,
+,,U1,ref5050,ref5050:ref5050,Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm,
+,,adc1,ads7883,ads7883:ads7883,TO_SOT_Packages_SMD:SOT-23-6,
+,,adc1-in1,CONN_01X02,conn:CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+,,adc2,ads7883,ads7883:ads7883,TO_SOT_Packages_SMD:SOT-23-6,
+,,adc2-in1,CONN_01X02,conn:CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+,,ard0,CONN_01X08,conn:CONN_01X08,Pin_Headers:Pin_Header_Straight_1x08,
+,,c7,22u,device:CP,Capacitors_SMD:c_elec_6.3x7.7,
+,,clk1,TEST,conn:TEST,Measurement_Points:Test_Point,
+,,gnd1,TEST,conn:TEST,Measurement_Points:Test_Point,
+,,gpio1,CONN_01X08,conn:CONN_01X08,Pin_Headers:Pin_Header_Straight_1x08,
+,,p8,CONN_02X23,conn:CONN_02X23,Pin_Headers:Pin_Header_Straight_2x23,
+,,pmod1,CONN_02X06,conn:CONN_02X06,Pin_Headers:Pin_Header_Straight_2x06,
+,,pmod2,CONN_02X06,conn:CONN_02X06,Pin_Headers:Pin_Header_Straight_2x06,
+,,sdo1,TEST,conn:TEST,Measurement_Points:Test_Point,
+,,sdo2,TEST,conn:TEST,Measurement_Points:Test_Point,
+
+
+
+Collated Components:
+
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet
+1,5,"!cs1, clk1, gnd1, sdo1, sdo2",TEST,conn:TEST,Measurement_Points:Test_Point,
+2,3,"C1, C2, C5",1u,device:C,Capacitors_SMD:C_1206_HandSoldering,
+3,2,"C3, C4",10n,device:C,Capacitors_SMD:C_1206_HandSoldering,
+4,1,C6,1nf,device:C,Capacitors_SMD:C_1206_HandSoldering,
+5,1,D1,LED,device:LED,LEDs:LED-1206,
+6,1,P1,CONN_01X03,conn:CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,
+7,3,"P2, adc1-in1, adc2-in1",CONN_01X02,conn:CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,
+8,1,P9,CONN_02X04,conn:CONN_02X04,Pin_Headers:Pin_Header_Straight_2x04,
+9,1,R1,100R,device:R,Resistors_SMD:R_1206_HandSoldering,
+10,1,R2,R,device:R,Resistors_SMD:R_1206_HandSoldering,
+11,1,U1,ref5050,ref5050:ref5050,Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm,
+12,2,"adc1, adc2",ads7883,ads7883:ads7883,TO_SOT_Packages_SMD:SOT-23-6,
+13,2,"ard0, gpio1",CONN_01X08,conn:CONN_01X08,Pin_Headers:Pin_Header_Straight_1x08,
+14,1,c7,22u,device:CP,Capacitors_SMD:c_elec_6.3x7.7,
+15,1,p8,CONN_02X23,conn:CONN_02X23,Pin_Headers:Pin_Header_Straight_2x23,
+16,2,"pmod1, pmod2",CONN_02X06,conn:CONN_02X06,Pin_Headers:Pin_Header_Straight_2x06,
