@@ -51,6 +51,11 @@ F 0 "adc1" H 2950 2800 60  0000 C CNN
 F 1 "ads7883" H 2950 1800 60  0000 C CNN
 F 2 "ADS7883:SOT-23-6" H 2950 2250 60  0001 C CNN
 F 3 "" H 2950 2250 60  0000 C CNN
+F 4 "2082426" H 2950 2250 60  0001 C CNN "farnell #"
+F 5 "Value" H 2950 2250 60  0001 C CNN "supplier"
+F 6 "Value" H 2950 2250 60  0001 C CNN "supplier PN"
+F 7 "Value" H 2950 2250 60  0001 C CNN "MOQ"
+F 8 "Value" H 2950 2250 60  0001 C CNN "leadtime"
 	1    2950 2250
 	1    0    0    -1  
 $EndComp
@@ -62,6 +67,11 @@ F 0 "adc2" H 2950 4100 60  0000 C CNN
 F 1 "ads7883" H 2950 3100 60  0000 C CNN
 F 2 "ADS7883:SOT-23-6" H 2950 3550 60  0001 C CNN
 F 3 "" H 2950 3550 60  0000 C CNN
+F 4 "2082426" H 2950 3550 60  0001 C CNN "farnell #"
+F 5 "Value" H 2950 3550 60  0001 C CNN "supplier"
+F 6 "Value" H 2950 3550 60  0001 C CNN "supplier PN"
+F 7 "Value" H 2950 3550 60  0001 C CNN "MOQ"
+F 8 "Value" H 2950 3550 60  0001 C CNN "leadtime"
 	1    2950 3550
 	1    0    0    -1  
 $EndComp
@@ -290,6 +300,11 @@ F 0 "U1" H 9750 3600 60  0000 C CNN
 F 1 "ref5050" H 9750 4350 60  0000 C CNN
 F 2 "ADS7883:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 9800 3850 60  0001 C CNN
 F 3 "" H 9800 3850 60  0000 C CNN
+F 4 "1439628" H 9800 3850 60  0001 C CNN "farnell #"
+F 5 "Value" H 9800 3850 60  0001 C CNN "supplier"
+F 6 "Value" H 9800 3850 60  0001 C CNN "supplier PN"
+F 7 "Value" H 9800 3850 60  0001 C CNN "MOQ"
+F 8 "Value" H 9800 3850 60  0001 C CNN "leadtime"
 	1    9800 3850
 	1    0    0    -1  
 $EndComp

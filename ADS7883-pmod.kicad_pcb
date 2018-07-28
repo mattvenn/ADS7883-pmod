@@ -18,7 +18,7 @@
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user hide)
@@ -30,7 +30,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -476,7 +476,7 @@
       (net 4 adc-5v))
   )
 
-  (module ADS7883:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 0) (tstamp 5B86AB57)
+  (module ADS7883:Pin_Header_Straight_1x03 (layer F.Cu) (tedit 5B5C3276) (tstamp 5B86AB57)
     (at 140 70.75)
     (descr "Through hole pin header")
     (tags "pin header")
