@@ -1,7 +1,8 @@
 # PMOD 2 x ADS7883 ADC
 
 the ADS7883 is a 12 bit, serial ADC. It can sample up to 3MHz, and can be supplied up to 5v.
-It needs 3 pins to operate: clk, select and data. On this board, both ADCs share a clock.
+
+It needs 3 pins to operate: clk, select and data.
 
 Supply can be 3.3v from the PMOD (limits maximum range of ADC to 3.3v), or 5v with a 
 precision regulator and an external supply between 5.5v and 16v.
