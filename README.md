@@ -13,6 +13,16 @@ Use the ext/pmod jumper to select the source.
 
 ![board](board.pdf)
 
+# Gerbers
+
+## [fab-ADS7883-pmod-2018-07-02.zip](fab-ADS7883-pmod-2018-07-02.zip)
+
+The silkscreen has an error on the 2 inputs. The 0v and ADC inputs are reversed. Attach 0v to ADC and ADC input to 0v.
+
+## [fab-ADS7883-pmod-2018-07-30.zip](fab-ADS7883-pmod-2018-07-30.zip)
+
+Fixes the reversed input labels.
+
 # BOM
 
 If you are using PMOD 3.3v for supply, you don't need C7, U1, C5.
@@ -26,4 +36,15 @@ C1 to C4 are bypass caps and will help to improve noise performance if added.
 
 # Verilog Core
 
-[adc.v](adc.v) is tested Verilog for the ADC.
+[icestick/adc.v](adc.v) is tested Verilog for the ADC.
+
+A working demo for the icestick is provided in the [icestick](icestick) directory. This reads ADC1 and shows top 5 bits on the icestick's LEDs.
+
+To synthesise and program an attached icestick using the Icestorm tools:
+
+    make prog
+
+To simulate using iverilog and launch gtkwave to view the waveforms:
+
+    make debug-adc
+
