@@ -1,6 +1,33 @@
 EESchema Schematic File Version 3
 LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:ads7883
 LIBS:ref5050
 LIBS:ADS7883-pmod-cache
@@ -9,10 +36,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "2xADS7883"
+Date "2019-04-25"
+Rev "v2"
+Comp "Pancom"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -33,9 +60,9 @@ F 7 "Value" H 7450 2800 60  0001 C CNN "leadtime"
 	1    7450 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 6950 2650 0    60   Input ~ 0
+Text GLabel 8000 2550 2    60   Input ~ 0
 adc1-sdo
-Text GLabel 7700 2650 2    60   Input ~ 0
+Text GLabel 8000 2750 2    60   Input ~ 0
 adc2-sdo
 Text GLabel 3850 2000 2    60   Input ~ 0
 adc1-cs
@@ -125,7 +152,7 @@ U 1 1 57CEE53C
 P 1700 2500
 F 0 "P3" H 1700 2650 50  0000 C CNN
 F 1 "CONN_01X02" V 1800 2500 50  0000 C CNN
-F 2 "ADS7883:Pin_Header_Straight_1x02" H 1700 2500 60  0001 C CNN
+F 2 "ADS7883:CON-SMA-EDGE" H 1700 2500 60  0001 C CNN
 F 3 "" H 1700 2500 60  0000 C CNN
 F 4 "Value" H 1700 2500 60  0001 C CNN "supplier"
 F 5 "Value" H 1700 2500 60  0001 C CNN "supplier PN"
@@ -140,7 +167,7 @@ U 1 1 57CEE623
 P 1750 3850
 F 0 "P4" H 1750 4000 50  0000 C CNN
 F 1 "CONN_01X02" V 1850 3850 50  0000 C CNN
-F 2 "ADS7883:Pin_Header_Straight_1x02" H 1750 3850 60  0001 C CNN
+F 2 "ADS7883:CON-SMA-EDGE" H 1750 3850 60  0001 C CNN
 F 3 "" H 1750 3850 60  0000 C CNN
 F 4 "Value" H 1750 3850 60  0001 C CNN "supplier"
 F 5 "Value" H 1750 3850 60  0001 C CNN "supplier PN"
@@ -171,7 +198,7 @@ U 1 1 57CEE9ED
 P 1750 1600
 F 0 "C1" H 1775 1700 50  0000 L CNN
 F 1 "1u" H 1775 1500 50  0000 L CNN
-F 2 "ADS7883:C_1206_HandSoldering" H 1788 1450 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1788 1450 30  0001 C CNN
 F 3 "" H 1750 1600 60  0000 C CNN
 	1    1750 1600
 	1    0    0    -1  
@@ -182,7 +209,7 @@ U 1 1 57CEEA91
 P 2050 1600
 F 0 "C3" H 2075 1700 50  0000 L CNN
 F 1 "10n" H 2075 1500 50  0000 L CNN
-F 2 "ADS7883:C_1206_HandSoldering" H 2088 1450 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2088 1450 30  0001 C CNN
 F 3 "" H 2050 1600 60  0000 C CNN
 	1    2050 1600
 	1    0    0    -1  
@@ -198,7 +225,7 @@ U 1 1 57CEED93
 P 1800 2950
 F 0 "C2" H 1825 3050 50  0000 L CNN
 F 1 "1u" H 1825 2850 50  0000 L CNN
-F 2 "ADS7883:C_1206_HandSoldering" H 1838 2800 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1838 2800 30  0001 C CNN
 F 3 "" H 1800 2950 60  0000 C CNN
 	1    1800 2950
 	1    0    0    -1  
@@ -209,7 +236,7 @@ U 1 1 57CEED99
 P 2100 2950
 F 0 "C4" H 2125 3050 50  0000 L CNN
 F 1 "10n" H 2125 2850 50  0000 L CNN
-F 2 "ADS7883:C_1206_HandSoldering" H 2138 2800 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2138 2800 30  0001 C CNN
 F 3 "" H 2100 2950 60  0000 C CNN
 	1    2100 2950
 	1    0    0    -1  
@@ -239,12 +266,12 @@ $EndComp
 $Comp
 L LED D1
 U 1 1 57CF06F4
-P 10050 1850
-F 0 "D1" H 10050 1950 50  0000 C CNN
-F 1 "LED" H 10050 1750 50  0000 C CNN
-F 2 "ADS7883:LED-1206" H 10050 1850 60  0001 C CNN
-F 3 "" H 10050 1850 60  0000 C CNN
-	1    10050 1850
+P 10050 1900
+F 0 "D1" H 10050 2000 50  0000 C CNN
+F 1 "LED" H 10050 1800 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 10050 1900 60  0001 C CNN
+F 3 "" H 10050 1900 60  0000 C CNN
+	1    10050 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -253,7 +280,7 @@ U 1 1 57CF0785
 P 10050 2300
 F 0 "R2" V 10130 2300 50  0000 C CNN
 F 1 "R" V 10050 2300 50  0000 C CNN
-F 2 "ADS7883:R_1206_HandSoldering" V 9980 2300 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 9980 2300 30  0001 C CNN
 F 3 "" H 10050 2300 30  0000 C CNN
 	1    10050 2300
 	1    0    0    -1  
@@ -261,7 +288,7 @@ $EndComp
 Wire Wire Line
 	8900 2050 8900 2200
 Wire Wire Line
-	10050 1650 10050 1600
+	10050 1750 10050 1700
 Wire Wire Line
 	10050 2150 10050 2050
 $Comp
@@ -335,7 +362,7 @@ F 3 "" H 8850 4200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 4200 8850 3850
+	8850 3850 8850 4200
 Wire Wire Line
 	8850 3850 9100 3850
 NoConn ~ 9100 3750
@@ -346,7 +373,7 @@ U 1 1 57CEE5B8
 P 8600 3750
 F 0 "C5" H 8625 3850 50  0000 L CNN
 F 1 "1u" H 8625 3650 50  0000 L CNN
-F 2 "ADS7883:C_1206_HandSoldering" H 8638 3600 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8638 3600 30  0001 C CNN
 F 3 "" H 8600 3750 60  0000 C CNN
 	1    8600 3750
 	1    0    0    -1  
@@ -459,7 +486,7 @@ F 3 "" H 7250 1550 60  0000 C CNN
 	1    7250 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 10050 1600 0    60   Input ~ 0
+Text GLabel 10050 1700 0    60   Input ~ 0
 adc-5v
 $Comp
 L Earth #PWR019
@@ -497,19 +524,91 @@ Text Notes 7325 6850 0    118  ~ 0
 2x ADS7883 ADC board
 Text GLabel 4650 3500 2    60   Input ~ 0
 adc2-clk
-Text GLabel 6950 2550 0    60   Input ~ 0
+Text GLabel 6650 2550 0    60   Input ~ 0
 adc1-cs
-Text GLabel 6950 2750 0    60   Input ~ 0
+Text GLabel 6650 2650 0    60   Input ~ 0
 adc1-clk
-Text GLabel 7700 2750 2    60   Input ~ 0
+Text GLabel 6650 2850 0    60   Input ~ 0
 adc2-clk
-Text GLabel 7700 2550 2    60   Input ~ 0
+Text GLabel 6650 2750 0    60   Input ~ 0
 adc2-cs
-Text GLabel 7200 3050 0    60   Input ~ 0
+Text GLabel 6950 3050 0    60   Input ~ 0
 pmod+
-Text GLabel 7700 3050 2    60   Input ~ 0
+Text GLabel 8000 3050 2    60   Input ~ 0
 pmod+
+NoConn ~ 7700 2650
 NoConn ~ 7700 2850
-NoConn ~ 7200 2850
 NoConn ~ 4900 2250
+Wire Wire Line
+	6950 3050 7200 3050
+Wire Wire Line
+	7700 3050 8000 3050
+$Comp
+L R R1
+U 1 1 5CC1E070
+P 6800 2550
+F 0 "R1" V 6880 2550 50  0000 C CNN
+F 1 "R" V 6800 2550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6730 2550 30  0001 C CNN
+F 3 "" H 6800 2550 30  0000 C CNN
+	1    6800 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5CC1E0FF
+P 6800 2650
+F 0 "R4" V 6880 2650 50  0000 C CNN
+F 1 "R" V 6800 2650 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6730 2650 30  0001 C CNN
+F 3 "" H 6800 2650 30  0000 C CNN
+	1    6800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5CC1E137
+P 6800 2750
+F 0 "R5" V 6880 2750 50  0000 C CNN
+F 1 "R" V 6800 2750 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6730 2750 30  0001 C CNN
+F 3 "" H 6800 2750 30  0000 C CNN
+	1    6800 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5CC1E171
+P 7850 2750
+F 0 "R6" V 7930 2750 50  0000 C CNN
+F 1 "R" V 7850 2750 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 7780 2750 30  0001 C CNN
+F 3 "" H 7850 2750 30  0000 C CNN
+	1    7850 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5CC1E1C9
+P 7850 2550
+F 0 "R3" V 7930 2550 50  0000 C CNN
+F 1 "R" V 7850 2550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 7780 2550 30  0001 C CNN
+F 3 "" H 7850 2550 30  0000 C CNN
+	1    7850 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5CC1E231
+P 6800 2850
+F 0 "R7" V 6880 2850 50  0000 C CNN
+F 1 "R" V 6800 2850 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 6730 2850 30  0001 C CNN
+F 3 "" H 6800 2850 30  0000 C CNN
+	1    6800 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 2850 7200 2850
 $EndSCHEMATC

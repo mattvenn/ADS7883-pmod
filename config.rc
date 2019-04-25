@@ -1,0 +1,14 @@
+; pcb config
+[board]
+mask_color = green
+silk_color = white
+material = FR4
+thickness = 1.6
+copper = 35um
+layers = 4
+
+[logo]
+logo = /home/matt/work/finances/mattvenn_logo.png
+
+[meta]
+name = "ads7883 pmod breakout"
